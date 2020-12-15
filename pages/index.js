@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import * as envEditor from 'env-editor'
 
 export default function Home() {
-  console.log('abc: ');
+  //const editor = envEditor.getEditor();
+  console.log('editor: ');
   return (
     <div className={styles.container}>
       <Head>
