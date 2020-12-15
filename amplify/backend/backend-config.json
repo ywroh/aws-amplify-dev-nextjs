@@ -7,5 +7,29 @@
       "customAuth": false
     }
   },
-  "api": {}
+  "api": {
+    "awsamplifydevnextjs": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+            "userPoolConfig": {
+              "userPoolId": "authawsamplifydevnextjs589f168a"
+            }
+          },
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "API_KEY",
+              "apiKeyConfig": {
+                "apiKeyExpirationDays": 100,
+                "description": "test"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
 }
