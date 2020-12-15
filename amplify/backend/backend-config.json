@@ -1,1 +1,11 @@
-{}
+{
+  "auth": {
+    "awsamplifydevnextjs589f168a": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  },
+  "api": {}
+}
